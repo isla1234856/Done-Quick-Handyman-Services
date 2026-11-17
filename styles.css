@@ -1,0 +1,381 @@
+/* =====================================================
+   DoneQuick Handyman - shared styles (all pages)
+   Colors from the logo: orange #DE6742, grey #7F7F7F, charcoal #221F20
+====================================================== */
+:root {
+  --dq-grey: #7F7F7F;
+  --dq-charcoal: #221F20;
+  --dq-orange: #DE6742;
+  --dq-orange-light: #E87D5A;
+  --dq-light: #f5f5f5;
+  --dq-text: #222;
+}
+
+html { font-size: 19px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', Arial, sans-serif; font-weight: 500; line-height: 1.6; color: #333; }
+h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: 0.5px; color: #222; }
+
+/* ---------- HEADER (logo + navigation) ---------- */
+.site-header {
+  background: var(--dq-charcoal);
+  border-bottom: 4px solid var(--dq-orange);
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+.logo-link { display: block; line-height: 0; }
+.logo-link img { height: 72px; width: auto; display: block; }
+
+.site-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem 1.6rem; }
+.site-nav a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-bottom: 3px solid transparent;
+}
+.site-nav a:hover { color: #fff; border-bottom-color: var(--dq-orange); }
+.site-nav a.active { color: #fff; border-bottom-color: var(--dq-orange); }
+.site-nav a.nav-cta {
+  background: var(--dq-orange);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 4px;
+  border-bottom: none;
+}
+.site-nav a.nav-cta:hover { background: var(--dq-orange-light); }
+
+/* ---------- HERO (home page) ---------- */
+.hero { background: var(--dq-light); padding: 40px 15px; text-align: center; }
+.hero h1 { font-size: 2rem; margin-bottom: 10px; color: #000; }
+.hero p { margin-bottom: 20px; }
+.hero a:not(.cta-btn) { color: #222; }
+.hero .cta-btn {
+  display: inline-block;
+  background: var(--dq-orange);
+  color: #f8f3f3;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.hero .cta-btn:hover { background: var(--dq-orange-light); }
+
+/* ---------- ABOUT (home page) ---------- */
+.about-section { padding: 40px 20px 20px; background: #fff; font-size: 1.05rem; }
+.about-inner { max-width: 1100px; margin: 0 auto; }
+.about-text h2 { margin-bottom: 0.6rem; color: #000; }
+.about-text p { margin-bottom: 0.8rem; }
+.badges { font-weight: 600; color: #1f2937; margin-top: 10px; }
+.about-text .badges { margin-bottom: 1.5rem; }
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: var(--dq-charcoal);
+  border-top: 4px solid var(--dq-orange);
+  color: #cfcfcf;
+  font-size: 0.85rem;
+}
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 20px 2rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  gap: 2rem;
+}
+.site-footer h4 {
+  color: var(--dq-orange);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+.footer-brand img { height: 56px; width: auto; display: block; margin-bottom: 0.8rem; }
+.footer-brand p { color: #cfcfcf; max-width: 300px; }
+.site-footer ul { list-style: none; }
+.site-footer li { margin-bottom: 0.4rem; }
+.site-footer a { color: #cfcfcf; text-decoration: none; }
+.site-footer a:hover { color: var(--dq-orange); }
+.footer-bottom {
+  border-top: 1px solid #3a3738;
+  text-align: center;
+  padding: 1rem 20px;
+  color: #9a9a9a;
+  font-size: 0.8rem;
+}
+
+/* ---------- CONTACT PAGE ---------- */
+.page-hero { background: var(--dq-light); padding: 40px 15px 30px; text-align: center; }
+.page-hero h1 { font-size: 2.4rem; color: #000; }
+.page-hero h1::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 0.8rem auto 0;
+  background: var(--dq-orange);
+  border-radius: 2px;
+}
+.page-hero p { margin: 1rem auto 0; max-width: 560px; }
+
+.contact-section { background: var(--dq-light); padding: 10px 20px 4rem; }
+.contact-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1.6rem;
+  align-items: start;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 14px;
+  border-top: 6px solid var(--dq-orange);
+  padding: 1.6rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.contact-card h2 { font-size: 1.2rem; color: #000; margin-bottom: 1rem; }
+.contact-item { margin-bottom: 1.1rem; }
+.contact-item:last-child { margin-bottom: 0; }
+.contact-item .label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--dq-orange);
+}
+.contact-item a, .contact-item span.value { color: #222; font-size: 0.95rem; text-decoration: none; }
+.contact-item a:hover { color: var(--dq-orange); }
+
+.contact-form label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+.contact-form .field { margin-bottom: 1rem; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--dq-text);
+  background: var(--dq-light);
+  border: 1.5px solid #d3dae3;
+  border-radius: 8px;
+  padding: 11px 12px;
+}
+.contact-form textarea { min-height: 130px; resize: vertical; }
+.contact-form input:hover,
+.contact-form select:hover,
+.contact-form textarea:hover { border-color: var(--dq-orange); }
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 3px solid rgba(222, 103, 66, 0.45);
+  outline-offset: 1px;
+  border-color: var(--dq-orange);
+}
+.contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-form button {
+  background: var(--dq-orange);
+  color: #f8f3f3;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.contact-form button:hover { background: var(--dq-orange-light); }
+.form-note { margin-top: 0.8rem; font-size: 0.8rem; color: #444; min-height: 1.2em; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .header-inner { flex-direction: column; }
+  .site-nav { justify-content: center; }
+  .footer-inner { grid-template-columns: 1fr; text-align: center; }
+  .footer-brand img { margin-left: auto; margin-right: auto; }
+  .footer-brand p { margin: 0 auto; }
+  .contact-wrap { grid-template-columns: 1fr; }
+  .contact-form .row { grid-template-columns: 1fr; }
+  .page-hero h1 { font-size: 1.9rem; }
+}
+
+/* =====================================================
+   SERVICES SECTION (home page)
+====================================================== */
+  .dq-services {
+    background: var(--dq-charcoal);
+    padding: 4.5rem 1.25rem 4rem;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  .dq-services-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .dq-services-head {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .dq-services-head h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    color: var(--dq-grey);
+    margin: 0;
+  }
+
+  .dq-services-head h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 0.8rem auto 0;
+    background: var(--dq-orange);
+    border-radius: 2px;
+  }
+
+  .dq-services-head p {
+    margin: 1.1rem auto 0;
+    max-width: 560px;
+    color: #cfcfcf;
+    font-size: 1rem;
+  }
+
+  .dq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+
+  .dq-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+    border-top: 6px solid var(--dq-orange);
+    padding: 1.5rem 1.5rem 1.4rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  }
+
+  .dq-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: #000;
+    margin: 0 0 0.4rem;
+  }
+
+  .dq-card h3::before { content: none; }
+
+  .dq-card .dq-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 0 1rem;
+  }
+
+  .dq-card select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--dq-text);
+    background-color: var(--dq-light);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1.5l6 6 6-6' fill='none' stroke='%23211f20' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    border: 1.5px solid #d3dae3;
+    border-radius: 8px;
+    padding: 11px 38px 11px 12px;
+    cursor: pointer;
+  }
+
+  .dq-card select:hover { border-color: var(--dq-orange); }
+
+  .dq-card select:focus-visible {
+    outline: 3px solid rgba(255, 159, 28, 0.55);
+    outline-offset: 1px;
+    border-color: var(--dq-orange);
+  }
+
+  .dq-service-name {
+    margin: 0.2rem 0 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dq-text);
+  }
+
+  .dq-price-row {
+    margin-top: auto;
+    padding-top: 1.2rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .dq-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.1rem;
+    line-height: 1;
+    color: var(--dq-orange);
+  }
+
+  .dq-unit {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+  }
+
+  /* Request a Free Quote button - same styling as the hero .cta-btn */
+  .dq-card .cta-btn {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    background: var(--dq-orange);
+    color: #f8f3f3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+  .dq-card .cta-btn:hover { background: var(--dq-orange-light); }
+
+  .dq-note {
+    margin: 2.2rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cfcfcf;
+  }
+
+  @media (max-width: 960px) {
+    .dq-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .dq-services { padding: 3rem 1rem; }
+    .dq-services-head h2 { font-size: 2.3rem; }
+    .dq-grid { grid-template-columns: 1fr; }
+  }

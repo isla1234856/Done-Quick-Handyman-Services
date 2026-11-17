@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | DoneQuick Handyman Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Request a free quote from DoneQuick Handyman Services in Utah County." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html" aria-label="Done Quick Handyman home">
+        <img src="Logo_2_0.jpg" alt="Done Quick Handyman" />
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html" class="active nav-cta" aria-current="page">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>Tell us what you need done and we’ll get back to you with a free quote.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="contact-wrap">
+
+      <div class="contact-card">
+        <h2>Reach us directly</h2>
+        <div class="contact-item">
+          <span class="label">Call or text</span>
+          <a href="tel:+18014490568">(801) 449-0568</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:admin@donequickhandyman.com">admin@donequickhandyman.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Service area</span>
+          <span class="value">Utah County</span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Pricing</span>
+          <a href="index.html#services">See our services &amp; pricing</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Request a free quote</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Phone</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email (optional)</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cf-service">What do you need help with?</label>
+            <select id="cf-service" name="service">
+              <option>Drywall Repair</option>
+              <option>Painting &amp; Vapor Barrier</option>
+              <option>TV Wall Mounting</option>
+              <option>Ceiling Fans</option>
+              <option>Clogged Drains</option>
+              <option>Caulking</option>
+              <option>Plumbing Installation</option>
+              <option>Electrical &amp; Lighting</option>
+              <option>Window Blinds &amp; Coverings</option>
+              <option>Doors</option>
+              <option>Filter Maintenance</option>
+              <option>Custom Project</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Project details</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send Request</button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Opens the visitor's email app with the form filled in.
+    // (For submissions that arrive without their email app, connect the form to a form service.)
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target;
+      var subject = 'Quote request: ' + f.service.value;
+      var body =
+        'Name: ' + f.name.value + '\n' +
+        'Phone: ' + f.phone.value + '\n' +
+        'Email: ' + f.email.value + '\n' +
+        'Service: ' + f.service.value + '\n\n' +
+        f.message.value;
+      window.location.href = 'mailto:admin@donequickhandyman.com' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+      document.getElementById('form-note').textContent =
+        'Opening your email app. If nothing opens, call or text (801) 449-0568.';
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="Logo_2_0.jpg" alt="Done Quick Handyman" />
+        <p>Your local handyman you can trust. Licensed &amp; insured, locally owned, satisfaction guaranteed.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services &amp; Pricing</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+18014490568">(801) 449-0568</a></li>
+          <li><a href="mailto:admin@donequickhandyman.com">admin@donequickhandyman.com</a></li>
+          <li>Serving Utah County</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 DoneQuick Handyman Services. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

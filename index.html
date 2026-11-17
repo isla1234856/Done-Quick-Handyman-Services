@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DoneQuick Handyman Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Your local handyman serving Utah County. Honest pricing, quality work, satisfaction guaranteed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html" aria-label="Done Quick Handyman home">
+        <img src="Logo_2_0.jpg" alt="Done Quick Handyman" />
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Your Local Handyman You Can Trust</h1>
+    <p>Serving Utah County with fast, friendly, and professional home repair services.</p>
+    <p><strong>Call or text: <a href="tel:+18014490568">(801) 449-0568</a> | <a href="mailto:admin@donequickhandyman.com">admin@donequickhandyman.com</a></strong></p>
+    <a href="contact.html" class="cta-btn">Request a Free Quote</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="dq-services" id="services">
+  <div class="dq-services-inner">
+
+    <div class="dq-services-head">
+      <h2>Our Handyman Services</h2>
+      <p>Honest, upfront pricing. Pick a service from any dropdown to see its price.</p>
+    </div>
+
+    <div class="dq-grid">
+
+      <!-- Drywall -->
+      <div class="dq-card" data-card>
+        <h3>Drywall Repair</h3>
+        <p class="dq-desc">Nail holes, dents, and patches, finished and ready for paint.</p>
+        <select aria-label="Drywall repair type">
+          <option data-price="$1" data-unit="per hole">Nail / screw hole repair</option>
+          <option data-price="$10" data-unit="per dent">Dents</option>
+          <option data-price="$40" data-unit="per patch">Hole repair (fist size)</option>
+          <option data-price="$50" data-unit="per sq. ft.">Hole repair (6 in. and larger)</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Painting & Vapor Barrier -->
+      <div class="dq-card" data-card>
+        <h3>Painting &amp; Vapor Barrier</h3>
+        <p class="dq-desc">Fresh interior paint and vapor barrier installation.</p>
+        <select aria-label="Painting or vapor barrier service">
+          <option data-price="$5" data-unit="per sq. ft.">General interior painting</option>
+          <option data-price="$3" data-unit="per sq. ft.">Vapor barrier installation</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- TV Mounting -->
+      <div class="dq-card" data-card>
+        <h3>TV Wall Mounting</h3>
+        <p class="dq-desc">Secure, level mounting on your wall. Pick your TV size.</p>
+        <select aria-label="TV size">
+          <option data-price="$130">Under 45 in.</option>
+          <option data-price="$180">45 in. – 55 in.</option>
+          <option data-price="$250">56 in. – 75 in.</option>
+          <option data-price="$400">75 in. – 85 in.+</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Ceiling Fans -->
+      <div class="dq-card" data-card>
+        <h3>Ceiling Fans</h3>
+        <p class="dq-desc">Swap an existing fan or install one where there wasn't one.</p>
+        <select aria-label="Ceiling fan service">
+          <option data-price="$100">Basic replacement</option>
+          <option data-price="$250">New installation</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Clogged Drains -->
+      <div class="dq-card" data-card>
+        <h3>Clogged Drains</h3>
+        <p class="dq-desc">Get the water flowing again.</p>
+        <select aria-label="Which drain">
+          <option data-price="$150">Kitchen sink</option>
+          <option data-price="$175">Bathroom sink / shower</option>
+          <option data-price="$200">Toilet</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Caulking -->
+      <div class="dq-card" data-card>
+        <h3>Caulking</h3>
+        <p class="dq-desc">Clean, watertight seals that last.</p>
+        <select aria-label="Caulking location">
+          <option data-price="$50">Sinks</option>
+          <option data-price="$150">Bathtub / shower</option>
+          <option data-price="$10" data-unit="per sq. ft.">Baseboards</option>
+          <option data-price="$10" data-unit="per sq. ft.">Countertops</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Plumbing Installation -->
+      <div class="dq-card" data-card>
+        <h3>Plumbing Installation</h3>
+        <p class="dq-desc">Sinks, faucets, shower heads, and tub spouts.</p>
+        <select aria-label="Plumbing installation type">
+          <option data-price="$250">Kitchen sink</option>
+          <option data-price="$200">Bathroom sink</option>
+          <option data-price="$100">Kitchen faucet</option>
+          <option data-price="$100">Bathroom faucet</option>
+          <option data-price="$100">Shower head</option>
+          <option data-price="$100">Tub spout</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="dq-card" data-card>
+        <h3>Electrical &amp; Lighting</h3>
+        <p class="dq-desc">Outlets, switches, alarms, and lighting.</p>
+        <select aria-label="Electrical service">
+          <optgroup label="Replacement">
+            <option data-price="$50">Outlets / switches</option>
+            <option data-price="$20">Smoke / fire alarm</option>
+            <option data-price="$15">Light fixtures</option>
+            <option data-price="$5">Light bulbs</option>
+          </optgroup>
+          <optgroup label="New installation">
+            <option data-price="$80">Outlets / switches</option>
+            <option data-price="$40">Smoke / fire alarm</option>
+            <option data-price="$50">Light fixture</option>
+          </optgroup>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Window Blinds -->
+      <div class="dq-card" data-card>
+        <h3>Window Blinds &amp; Coverings</h3>
+        <p class="dq-desc">Blinds hung straight and mounted securely.</p>
+        <select aria-label="Blind type">
+          <option data-price="$125">Vinyl blinds</option>
+          <option data-price="$300">Faux wood blinds</option>
+          <option data-price="$550">Real wood blinds</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Doors -->
+      <div class="dq-card" data-card>
+        <h3>Doors</h3>
+        <p class="dq-desc">Handles, locksets, and doors that stick or won't latch.</p>
+        <select aria-label="Door service">
+          <option data-price="$20">Door handles / locksets</option>
+          <option data-quote="true">Door replacement</option>
+          <option data-quote="true">Door adjustment / alignment</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Filters (single service, no dropdown) -->
+      <div class="dq-card" data-card>
+        <h3>Filter Maintenance</h3>
+        <p class="dq-desc">Air and HVAC filters swapped so your system breathes easy.</p>
+        <p class="dq-service-name">Air / HVAC filter replacement</p>
+        <select hidden aria-hidden="true">
+          <option data-price="$5">Air / HVAC filter replacement</option>
+        </select>
+        <div class="dq-price-row"><span class="dq-price"></span><span class="dq-unit"></span></div>
+      </div>
+
+      <!-- Custom -->
+      <div class="dq-card">
+        <h3>Custom Projects</h3>
+        <p class="dq-desc">Have something unique in mind? Tell us about your project and we’ll make it happen.</p>
+        <a href="contact.html" class="cta-btn">Request a Free Quote</a>
+      </div>
+
+    </div>
+
+    <p class="dq-note">Prices are standard guidelines. Final pricing is confirmed with your free quote.</p>
+  </div>
+</section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>About DoneQuick Handyman Services</h2>
+        <p>
+          Started by two friends who thought they could innovate the business model of handyman companies to be more successful. With over 5 years of hands-on experience, we focus on honest pricing,
+          clear communication, and quality work.
+        </p>
+        <p>
+          We show up on time, respect your home, and don’t leave until the job is
+          done right.
+        </p>
+        <p class="badges">Licensed &amp; insured • Locally owned • Satisfaction guaranteed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="Logo_2_0.jpg" alt="Done Quick Handyman" />
+        <p>Your local handyman you can trust. Licensed &amp; insured, locally owned, satisfaction guaranteed.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services &amp; Pricing</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+18014490568">(801) 449-0568</a></li>
+          <li><a href="mailto:admin@donequickhandyman.com">admin@donequickhandyman.com</a></li>
+          <li>Serving Utah County</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 DoneQuick Handyman Services. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.dq-card[data-card]').forEach(function (card) {
+      var select = card.querySelector('select');
+      var price  = card.querySelector('.dq-price');
+      var unit   = card.querySelector('.dq-unit');
+  
+      function render() {
+        var opt = select.options[select.selectedIndex];
+        if (opt.dataset.quote) {
+          price.textContent = 'Custom quote';
+          price.style.fontSize = '1.4rem';
+          unit.textContent = '';
+        } else {
+          price.textContent = opt.dataset.price;
+          price.style.fontSize = '';
+          unit.textContent = opt.dataset.unit || '';
+        }
+      }
+  
+      select.addEventListener('change', render);
+      render();
+    });
+  </script>
+
+</body>
+</html>
